@@ -13,12 +13,12 @@ export const useFetchGifts = ( category ) => {
          getGifts(category).then
              ( imgs =>{
 
-                setTimeout ( () => {
+                //setTimeout ( () => {
                     setstate({
                      data: imgs,
                      loading: false
                  });
-                }, 3000);
+                //}, 3000);
                  
              })
      }, [category]); // El segundo parametro es un arreglo de dependencias
